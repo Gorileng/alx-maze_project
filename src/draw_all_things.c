@@ -1,15 +1,15 @@
 #include "../include/main.h"
 
 /**
- * verLine - A function to draw fast vertical line from (x,y1) to (x,y2),
+ * verLine - A function to draw the fast vertical line from the (x,y1) to (x,y2),
  * with RGB color
  *
- * @x: Column iterator
- * @y1: The coordinate of the first vertical column to be drawn
- * @y2: The coordinate of the last vertical column to be drawn
- * @color: struct containing the RGBA values of a given color
- * @instance: struct of type SDL_Instance
- * Return: 0 else 1 (Success)
+ * @x: Column of the iterator
+ * @y1: the coordinate of a first vertical column to be drawn
+ * @y2: the coordinate of a last vertical column to be drawn
+ * @color: struct containing RGBA values of the given color
+ * @instance: struct of the type SDL_Instance
+ * Return: 0 or else 1 (Success)
  */
 int verLine(int x, int y1, int y2, ColorRGBA *color, SDL_Instance *instance)
 {
@@ -45,11 +45,11 @@ int verLine(int x, int y1, int y2, ColorRGBA *color, SDL_Instance *instance)
 }
 
 /**
- * fps_count - A function to calculate the frame rate and return its value
+ * fps_count - A function to calculate a frame rate and return the value
  *
- * @time: Time of curent frame in seconds
- * @oldTime: Time of previous frame in seconds
- * Return: Value of frame rate (FPS)
+ * @time: Time of the curent frame in seconds
+ * @oldTime: Time of the previous frame in seconds
+ * Return: Value of the frame rate (FPS)
  */
 int fps_count(double *time, double *oldTime)
 {
@@ -70,9 +70,9 @@ int fps_count(double *time, double *oldTime)
 }
 
 /**
- * cls - A function to clear the screen and set its color to black
+ * cls - A function to clear a screen and set the color to black
  *
- * @scr: SDL Screen Surface contained by the window
+ * @scr: SDL Screen Surface contained by window
  */
 void cls(SDL_Surface *scr)
 {
@@ -84,14 +84,14 @@ void cls(SDL_Surface *scr)
 }
 
 /**
- * render_walls - A function to render the walls on the screen.
+ * render_walls - A function to render walls on a screen.
  *
- * @renderer: The renderer of the window
- * @wall_top: The coordinate of the first vertical column to be drawn
- * @wall_bottom: The coordinate of the last vertical column to be drawn
- * @wall_code: The code of the wall to be drawn
- * @side: The side of the wall to be drawn
- * @x: The column iterator
+ * @renderer: The renderer of window
+ * @wall_top: The coordinates of first vertical column to be drawn
+ * @wall_bottom: The coordinates of last vertical column to be drawn
+ * @wall_code: The codes of a wall to be drawn
+ * @side: The sides of a wall to be drawn
+ * @x: The column of the iterator
  */
 void render_walls(SDL_Renderer *renderer, int wall_top, int wall_bottom,
 				int wall_code, int side, int x)

@@ -1,9 +1,9 @@
 #include "../include/main.h"
 
 /**
- * draw_something - A basic function to draw a line
+ * draw_something - A basic functions to draw the line
  *
- * @instance: An SDL instance of type struct SDL_Instance
+ * @instance: An SDL instance of the type struct SDL_Instance
  */
 void draw_something(SDL_Instance *instance)
 {
@@ -12,9 +12,9 @@ void draw_something(SDL_Instance *instance)
 }
 
 /**
- * draw_image - A function to draw an image onto the SDL Screen Surface
+ * draw_image - A function to draw the aimage onto a SDL Screen Surface
  *
- * @instance: An SDL instance of type struct SDL_Instance
+ * @instance: An SDL instance of the type struct SDL_Instance
  */
 void draw_image(SDL_Instance *instance)
 {
@@ -25,11 +25,11 @@ void draw_image(SDL_Instance *instance)
 }
 
 /**
- * drawMiniMap - A function to draw the minimap.
+ * drawMiniMap - A function to draw minimap.
  *
- * @WorldMap: The map to draw
- * @instance: The SDL_Instance to draw to
- * @player: The player to draw
+ * @WorldMap: The map will draw
+ * @instance: The SDL_Instance will draw to
+ * @player: The players to draw
  */
 void drawMiniMap(int (*WorldMap)[MAP_WIDTH], SDL_Instance *instance,
 				Vector player)
@@ -50,7 +50,7 @@ void drawMiniMap(int (*WorldMap)[MAP_WIDTH], SDL_Instance *instance,
 		}
 	}
 
-	/* Draw player */
+	/* Draw the player */
 	curRect.x = player.posX * TILE_SIZE;
 	curRect.y = player.posY * TILE_SIZE;
 	curRect.w = TILE_SIZE;
@@ -60,6 +60,6 @@ void drawMiniMap(int (*WorldMap)[MAP_WIDTH], SDL_Instance *instance,
 							color.blue, (Uint8) (255 * color.alpha));
 	SDL_RenderFillRect(instance->renderer, &curRect);
 
-	/* Update screen */
+	/* Updates the screen */
 	SDL_RenderPresent(instance->renderer);
 }

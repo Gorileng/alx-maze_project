@@ -1,9 +1,9 @@
 #include "../include/main.h"
 
 /**
- * generate_map - A function to generate a map to be rendered for the game.
+ * generate_map - A function to generate the map to be rendered for a game.
  *
- * @worldMap: A 2-dimensional matrix of integers to render the game map
+ * @worldMap: A 2-dimensional matrix of the integers to render a game map
  */
 void generate_map(int (*worldMap)[MAP_WIDTH])
 {

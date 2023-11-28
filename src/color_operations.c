@@ -1,11 +1,11 @@
 #include "../include/main.h"
 
 /**
- * rgba_color_add - A function to add 2 structs of type ColorRGBA together
+ * rgba_color_add - A function to add the 2 structs of the type ColorRGBA together
  *
- * @color1: The 1st struct
- * @color2: The 2nd struct
- * Return: The sum struct of type ColorRGBA
+ * @color1: the 1st struct
+ * @color2: the 2nd struct
+ * Return: the sum of the struct type ColorRGBA
  */
 ColorRGBA rgba_color_add(ColorRGBA color1, ColorRGBA color2)
 {
@@ -19,11 +19,11 @@ ColorRGBA rgba_color_add(ColorRGBA color1, ColorRGBA color2)
 }
 
 /**
- * rgba_color_sub - A function to subtract 2 structs of type ColorRGBA
+ * rgba_color_sub - A function to subtract the 2 structs of the type ColorRGBA
  *
- * @color1: The 1st struct
- * @color2: The 2nd struct
- * Return: The difference struct of type ColorRGBA
+ * @color1: the 1st struct
+ * @color2: the 2nd struct
+ * Return: the difference of the struct of type ColorRGBA
  */
 ColorRGBA rgba_color_sub(ColorRGBA color1, ColorRGBA color2)
 {
@@ -37,11 +37,11 @@ ColorRGBA rgba_color_sub(ColorRGBA color1, ColorRGBA color2)
 }
 
 /**
- * rgba_color_mul - A function to multiply 2 structs of type ColorRGBA together
+ * rgba_color_mul - A function to multiply the 2 structs of the type ColorRGBA together
  *
- * @color1: The 1st struct
- * @color2: The 2nd struct
- * Return: The product struct of type ColorRGBA
+ * @color1: the 1st struct
+ * @color2: the 2nd struct
+ * Return: the product of the struct type ColorRGBA
  */
 ColorRGBA rgba_color_mul(ColorRGBA color1, ColorRGBA color2)
 {
@@ -55,11 +55,11 @@ ColorRGBA rgba_color_mul(ColorRGBA color1, ColorRGBA color2)
 }
 
 /**
- * rgba_color_div - A function to divide 2 structs of type ColorRGBA
+ * rgba_color_div - A function to divide the 2 structs of the type ColorRGBA
  *
- * @color1: The 1st struct
- * @color2: The 2nd struct
- * Return: The quotient struct of type ColorRGBA
+ * @color1: the 1st struct
+ * @color2: the 2nd struct
+ * Return: the quotient of the struct type ColorRGBA
  */
 ColorRGBA rgba_color_div(ColorRGBA color1, ColorRGBA color2)
 {
@@ -73,11 +73,11 @@ ColorRGBA rgba_color_div(ColorRGBA color1, ColorRGBA color2)
 }
 
 /**
- * rgba_color_comp - A function to compare 2 structs of type ColorRGBA
+ * rgba_color_comp - A function to compare the 2 structs of the type ColorRGBA
  *
- * @color1: The 1st struct
- * @color2: The 2nd struct
- * Return: 1 if they are equal else -1
+ * @color1: the 1st struct
+ * @color2: the 2nd struct
+ * Return: 1 when they're equal or else -1
  */
 int rgba_color_comp(ColorRGBA color1, ColorRGBA color2)
 {

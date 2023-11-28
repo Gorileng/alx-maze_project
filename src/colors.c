@@ -1,10 +1,10 @@
 #include "../include/main.h"
 
 /**
- * rgba_color_code - A code to return the RGBA code of the requested color
+ * rgba_color_code - A code to return a RGBA code of a requested color
  *
- * @color: An array of characters (string) specifying the requested color
- * Return: A struct of type ColorRGBA for the requested color
+ * @color: An array of the characters (string) specifying requested color
+ * Return: A struct of the type ColorRGBA for a requested color
  */
 ColorRGBA rgba_color_code(char *color)
 {
@@ -43,13 +43,13 @@ ColorRGBA rgba_color_code(char *color)
 }
 
 /**
- * color_walls - Assigns a color code to each integer case
+ * color_walls - Assigns the color code to each integer case
  *
- * @worldMap: A 2-dimensional array of integer values
- * @mapX: x-coordinate of current box of the map we're in
- * @mapY: y-coordinate of current box of the map we're in
- * @color: struct of type ColorRGBA containing the RGBA value of given color
- * @side: Side of the wall that was hit (NS or EW)
+ * @worldMap: A 2-dimensional array of the integer values
+ * @mapX: x-coordinate of the current box of a map we are in
+ * @mapY: y-coordinate of the current box of a map we are in
+ * @color: struct of the type ColorRGBA containing RGBA value of the given color
+ * @side: Side of a wall that was hit to (NS or EW)
  */
 void color_walls(int (*worldMap)[MAP_WIDTH], int mapX, int mapY,
 				ColorRGBA *color, int side)
@@ -73,17 +73,17 @@ void color_walls(int (*worldMap)[MAP_WIDTH], int mapX, int mapY,
 			break;
 	}
 
-	/* give x and y sides different brightness */
+	/* give x and y the sides different brightness */
 	if (side == 1)
 		rgba_div(color, 2, 1.0);
 }
 
 /**
- * color_wall - Assigns a color code to each integer case
+ * color_wall - Assigns the color code to each integer case
  *
- * @wall_code: An integer value for the wall
- * @side: Side of the wall that was hit (NS or EW)
- * Return: A struct of type ColorRGBA for the requested color
+ * @wall_code: An integer value for a wall
+ * @side: Side of a wall that was hit on (NS or EW)
+ * Return: A struct of the type ColorRGBA for a requested color
  */
 ColorRGBA color_wall(int wall_code, int side)
 {
@@ -108,7 +108,7 @@ ColorRGBA color_wall(int wall_code, int side)
 			break;
 	}
 
-	/* give x and y sides different brightness */
+	/* give x and y the sides different brightness */
 	if (side == 1)
 		rgba_div(&color, 2, 1.0);
 

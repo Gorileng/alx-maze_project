@@ -1,15 +1,15 @@
 #include "../include/main.h"
 
 /**
- * initialize_SDL - A function to initialize SDL
+ * initialize_SDL - A function that initializes the SDL
  *
- * @instance: An SDL instance of type struct SDL_Instance
- * Return: Boolean success flag (true or flase)
+ * @instance: An SDL instance of the type struct SDL_Instance
+ * Return: A boolean success flag (true or false) 
  */
 bool initialize_SDL(SDL_Instance *instance)
 {
 	bool success = true;
-	/* Initialize SDL */
+	/* Initializes the SDL */
 	if (SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
 		fprintf(stderr, "Failed to initialize SDL! SDL_Error: %s\n",
@@ -38,7 +38,7 @@ bool initialize_SDL(SDL_Instance *instance)
 				SDL_Quit();
 				success = false;
 			}
-			/* Color the screen surface */
+			/* Colors the screen surface */
 			/* colorFill(instance, "black"); */
 		}
 	}
@@ -46,9 +46,9 @@ bool initialize_SDL(SDL_Instance *instance)
 }
 
 /**
- * keep_window - A function to keep the SDL window open.
+ * keep_window - A function to keep SDL window open.
  *
- * @quit: A boolean flag to keep the window open
+ * @quit: Boolean flag to keep a window open
  */
 void keep_window(bool *quit)
 {
@@ -68,60 +68,60 @@ void keep_window(bool *quit)
 }
 
 /**
- * end - A funtion to free resources and quit SDL subsystems.
+ * end - A funtion to free the resources and quit the SDL subsystems.
  *
- * @instance: An SDL instance of type struct SDL_Instance
+ * @instance: An SDL instance of the type struct SDL_Instance
  */
 void end(SDL_Instance *instance)
 {
-	/* Deallocate surface */
+	/* Deallocates the surface */
 	SDL_FreeSurface(instance->image);
 	instance->image = NULL;
-	/* Deallocate screen surface */
+	/* Deallocates the screen surface */
 	SDL_FreeSurface(instance->screenSurface);
 	instance->screenSurface = NULL;
-	/* Destroy Renderer */
+	/* Destroys the Renderer */
 	SDL_DestroyRenderer(instance->renderer);
 	instance->renderer = NULL;
-	/* Destroy window */
+	/* Destroys the window */
 	SDL_DestroyWindow(instance->window);
 	instance->window = NULL;
-	/* Free resources and Quit SDL subsystems */
+	/* Free resources and Quit the SDL subsystems */
 	SDL_Quit();
 }
 
 /**
- * colorFill - A function to fill an SDL Screen Surface with a specified color
+ * colorFill - A function that fills the SDL Screen Surface with the specified color
  *
- * @instance: An SDL instance of type struct SDL_Instance
- * @color_name: The name of the color as a string
+ * @instance: An SDL instance of the type struct SDL_Instance
+ * @color_name: The name of a color as a string
  */
 void colorFill(SDL_Instance *instance, char *color_name)
 {
-	/* Retrieve a color */
+	/* Retrieves the color */
 	ColorRGBA fill_color = rgba_color_code(color_name);
-	/* Fill the surface with color */
+	/* Fills a surface with the color */
 	SDL_FillRect(instance->screenSurface, NULL,
 				SDL_MapRGBA(instance->screenSurface->format,
 				fill_color.red, fill_color.green, fill_color.blue,
 				(Uint8) (255 * fill_color.alpha)));
-	/* Update the surface */
+	/* Updates a surface */
 	SDL_UpdateWindowSurface(instance->window);
 }
 
 /**
- * loadMedia - A function to load media into an SDL_Surface.
+ * loadMedia - A function to the load media into the SDL_Surface.
  *
- * @instance: An SDL instance of type struct SDL_Instance
- * @media_path: The relative path to the media
- * Return: Boolean success flag (true or flase)
+ * @instance: An SDL instance of the type struct SDL_Instance
+ * @media_path: the relative path to a media
+ * Return: A boolean success flag (true or false)
  */
 bool loadMedia(SDL_Instance *instance, char *media_path)
 {
-	/* Loading success flag */
+	/* Loading the success flag */
 	bool success = true;
 
-	/* Load splash image */
+	/* Load the splash image */
 	instance->image = SDL_LoadBMP(media_path);
 	if (instance->image == NULL)
 	{

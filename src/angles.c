@@ -1,12 +1,12 @@
 #include "../include/main.h"
 
 /**
- * deg - A function to convert a given value of either Gradients
- * or Radians to Degrees.
+ * deg - A function to convert the given value of either the Gradients
+ * or the Radians to Degrees.
  *
- * @val: Value in Gradients or Radians
- * @format: 'g' for Gradient or 'r' for Radians
- * Return: Value in Degrees else -1
+ * @val: Value in the Gradients or the Radians
+ * @format: 'g' for the Gradient or 'r' for the Radians
+ * Return: Value in the Degrees or else -1
  */
 double deg(float val, char format)
 {
@@ -21,12 +21,12 @@ double deg(float val, char format)
 }
 
 /**
- * grd - A function to convert a given value of either Degrees
- * or Radians to Gradients.
+ * grd - A function to convert the given value of either the Degrees
+ * or the Radians to Gradients.
  *
- * @val: Value in Degrees or Radians
- * @format: 'd' for Degrees or 'r' for Radians
- * Return: Value in Gradients else -1
+ * @val: Value in the Degrees or the Radians
+ * @format: 'd' for the Degrees or 'r' for the Radians
+ * Return: Value in the Gradients or else -1
  */
 double grd(float val, char format)
 {
@@ -41,12 +41,12 @@ double grd(float val, char format)
 }
 
 /**
- * rad - A function to convert a given value of either Degrees
- * or Gradients to Radians.
+ * rad - A function to convert the given value of either the Degrees
+ * or the Gradients to Radians.
  *
- * @val: Value in Degrees or Gradients
- * @format: 'd' for Degrees or 'g' for Gradients
- * Return: Value in Radians else -1
+ * @val: Value in the Degrees or the Gradients
+ * @format: 'd' for the Degrees or 'g' for the Gradients
+ * Return: Value in the Radians or else -1
  */
 double rad(float val, char format)
 {

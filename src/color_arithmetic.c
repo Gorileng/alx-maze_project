@@ -1,10 +1,10 @@
 #include "../include/main.h"
 
 /**
- * handle_mod1 - Function to handle modulo operations by 1
+ * handle_mod1 - Function to handle the module of operations by 1
  *
- * @target: The target of the modulo operation
- * Return: Float value of the operation
+ * @target: The target of module operation
+ * Return: Float value of an operation
  */
 float handle_mod1(float target)
 {
@@ -17,11 +17,11 @@ float handle_mod1(float target)
 }
 
 /**
- * rgba_add - A function to add given values to the RGB and A of color
+ * rgba_add - A function to add the given values to RGB and the A of color
  *
- * @color: The struct of the target color
- * @n: An integer to be added to the Red, Green, and Blue values of color
- * @a: A float value to be added to the Alpha value of color
+ * @color: The struct of a target color
+ * @n: An integer to be added to a Red, Green, and Blue values of the color
+ * @a: A float value to be added to Alpha value of the color
  */
 void rgba_add(ColorRGBA *color, int n, float a)
 {
@@ -33,11 +33,11 @@ void rgba_add(ColorRGBA *color, int n, float a)
 }
 
 /**
- * rgba_sub - A function to subtract given values from the RGB and A of color
+ * rgba_sub - A function to subtract a given values from RGB and A of the color
  *
- * @color: The struct of the target color
- * @n: An integer to be subtracted from the RGB values of color
- * @a: A float value to be subtracted from the Alpha value of color
+ * @color: The struct of target color
+ * @n: An integer to be subtracted from RGB values of the color
+ * @a: A float value to be subtracted from Alpha value of the color
  */
 void rgba_sub(ColorRGBA *color, int n, float a)
 {
@@ -49,11 +49,11 @@ void rgba_sub(ColorRGBA *color, int n, float a)
 }
 
 /**
- * rgba_mul - A function to multiply RGB and A by given values
+ * rgba_mul - A function to multiply RGB and A by the given values
  *
- * @color: The struct of the target color
- * @n: An integer to multiply with the Red, Green, and Blue values of color
- * @a: A float value to multiply with the Alpha value of color
+ * @color: The struct of target color
+ * @n: An integer to multiply with a Red, Green, and Blue values of the color
+ * @a: A float value to multiply with Alpha value of the color
  */
 void rgba_mul(ColorRGBA *color, int n, float a)
 {
@@ -65,11 +65,11 @@ void rgba_mul(ColorRGBA *color, int n, float a)
 }
 
 /**
- * rgba_div - A function to divide RGB and A by given values
+ * rgba_div - A function to divide RGB and A by the given values
  *
- * @color: The struct of the target color
- * @n: An integer to divide the Red, Green, and Blue values of color with
- * @a: A float value to divide the Alpha value of color with
+ * @color: The struct of a target color
+ * @n: An integer to divide Red, Green, and Blue values of the color with
+ * @a: A float value to divide Alpha value of the color with
  */
 void rgba_div(ColorRGBA *color, int n, float a)
 {

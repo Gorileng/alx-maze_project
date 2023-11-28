@@ -1,20 +1,20 @@
 #include "../include/main.h"
 
 /**
- * done - A function that returns 1 if you close the window or press the escape
- * key. Also handles everything that's needed per frame.
+ * done - A function that will return 1 if you close a window or press escape
+ * key. And handles everything that is needed per frame.
  *
- * @event: An SDL Event
- * @delay: The delay flag (true or false)
- * @keys: A boolean array to store key states
- * Return: Boolean success flag (true or flase)
+ * @event: SDL Event
+ * @delay: the delay flag (true or false)
+ * @keys: A boolean array to store the key states
+ * Return: A boolean success flag (true or false) 
  */
 bool done(SDL_Event *event, bool delay, const unsigned char *keys)
 {
-	/* delay gives CPU some free time */
-	/* use once per frame to avoid 100% usage of a CPU core */
+	/* delay gives the CPU some free time */
+	/* use once per frame to avoid the 100% usage of the CPU core */
 	if (delay)
-		SDL_Delay(5); /* so it consumes less processing power */
+		SDL_Delay(5); /* so it consumes the less processing power */
 	SDL_PollEvent(event);
 	/**
 	 * while (SDL_PollEvent(event))
@@ -31,9 +31,9 @@ bool done(SDL_Event *event, bool delay, const unsigned char *keys)
 }
 
 /**
- * readKeys - A function that gives value of pressed key to keys array.
+ * readKeys - A function that gives the value of the pressed key to keys array.
  *
- * @keys: A boolean array to store key states
+ * @keys: A boolean array to store the key states
  */
 void readKeys(const unsigned char *keys)
 {

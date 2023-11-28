@@ -1,10 +1,10 @@
 #include "../include/main.h"
 
 /**
- * getTicks - A function that returns the time in milliseconds
+ * getTicks - A function that will return time in milliseconds
  * since the program started.
  *
- * Return: unsigned long value of the time in milliseconds
+ * Return: unsigned long value of time in milliseconds
  */
 unsigned long getTicks(void)
 {
@@ -12,9 +12,9 @@ unsigned long getTicks(void)
 }
 
 /**
- * poll_events - A function that polls for events and returns
+ * poll_events - A function that polls for the events and then returns
  *
- * Return: 0 if no events, 1 if events
+ * Return: 0 if there's no events, 1 if events
  */
 int poll_events(void)
 {

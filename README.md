@@ -4,7 +4,7 @@ This is the alternative 'Maze project' for build your portfolio project (week 2)
 
 ## Background Context
 
-The goal of this project is to create a game in 3D using raycasting !
+Well the goal of this project is to create a game in 3D using raycasting !
 
 ## Tasks
 

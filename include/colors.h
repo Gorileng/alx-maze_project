@@ -2,13 +2,13 @@
 #define _COLORS_H_
 
 /**
- * struct ColorRGBA - Typedef for a struct of type Vector
- * @red: The R value of the color
- * @green: The G value of the color
- * @blue: The B value of the color
- * @alpha: A value between 0.0 (fully transparent) and 1.0 (fully opaque)
+ * struct ColorRGBA - Typedef for the struct of the type Vector
+ * @red: The R value of a color
+ * @green: The G value of a color
+ * @blue: The B value of a color
+ * @alpha: The value between 0.0 (fully transparent) and the 1.0 (fully opaque)
  *
- * Description: A struct containing the RGBA values of a color.
+ * Description: A struct that contains RGBA values of the color.
  */
 typedef struct ColorRGBA
 {

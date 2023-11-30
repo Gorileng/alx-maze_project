@@ -8,7 +8,7 @@
 #include "raycaster.h"
 #include "renderer.h"
 
-/* Dimensional constants */
+/* The dimensional constants */
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
 #define MAP_HEIGHT 24
@@ -21,20 +21,20 @@
 
 #define KEYS 322
 
-/* Boolean values */
+/* The boolean values */
 #define false 0
 #define true 1
 
 typedef _Bool bool;
 
 /**
- * struct SDL_Instance - Typedef for struct of type SDL_Instance
- * @window: SDL Window we'll be rendering to
- * @renderer: SDL Renderer
- * @screenSurface: SDL Screen Surface contained by the window
- * @image: The image we will load and show on the screen
+ * struct SDL_Instance - Typedef for the struct of a type SDL_Instance
+ * @window: SDL Window will be rendering to
+ * @renderer: The SDL Renderer
+ * @screenSurface: SDL Screen Surface that is contained by the window
+ * @image: The image that will load and show on the screen
  *
- * Description: A struct for the SDL_Instance.
+ * Description: The struct for a SDL_Instance.
  */
 typedef struct SDL_Instance
 {
@@ -57,18 +57,18 @@ void draw_image(SDL_Instance *instance);
 void draw_something(SDL_Instance *instance);
 
 /**
- * generate_map - A function to generate the map to be rendered in the game.
+ * generate_map - The function to generate a map to be rendered in a game.
  *
- * @worldMap: A 2-dimensional matrix of integers to render the game map
+ * @worldMap: A 2-dimensional matrix of the integers to render a game map
  */
 void generate_map(int (*worldMap)[MAP_WIDTH]);
 
 /**
- * drawMiniMap - A function to draw the minimap.
+ * drawMiniMap - The function to draw a minimap.
  *
- * @WorldMap: The map to draw
- * @instance: The SDL_Instance to draw to
- * @player: The player to draw
+ * @WorldMap: A map to draw
+ * @instance: SDL_Instance to draw to
+ * @player: player to draw
  */
 void drawMiniMap(int (*WorldMap)[MAP_WIDTH], SDL_Instance *instance,
 				Vector player);
@@ -82,13 +82,13 @@ int DDA(int *hit, int *side, double *sideDistX, double *sideDistY,
 int verLine(int x, int y1, int y2, ColorRGBA *color, SDL_Instance *instance);
 
 /**
- * color_walls - Assigns a color code to each integer case
+ * color_walls - Assigns the color code to each the integer case
  *
- * @worldMap: A 2-dimensional array of integer values
- * @mapX: x-coordinate of current box of the map we're in
- * @mapY: y-coordinate of current box of the map we're in
- * @color: struct of type ColorRGBA containing the RGBA value of given color
- * @side: Side of the wall that was hit (NS or EW)
+ * @worldMap: A 2-dimensional array of the integer values
+ * @mapX: x-coordinate of the current box of a map we are in
+ * @mapY: y-coordinate of the current box of a map we are in
+ * @color: struct of the type ColorRGBA that contains RGBA value of the given color
+ * @side: Side of a wall that was hit to (NS or EW)
  */
 void color_walls(int (*worldMap)[MAP_WIDTH], int mapX, int mapY,
 				ColorRGBA *color, int side);

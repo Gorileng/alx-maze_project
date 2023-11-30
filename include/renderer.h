@@ -1,9 +1,9 @@
 #ifndef _RENDERING_H_
 #define _RENDERING_H_
 
-/* Divider for making the minimap smaller */
+/* The divider for making a minimap smaller */
 #define MINIMAP_DIVIDER 16
-/* Dividers for making the player in the minimap smaller */
+/* The dividers for making a player in a minimap smaller */
 #define MINIMAP_PLAYER_WIDTH 4
 #define MINIMAP_PLAYER_HEIGHT 4
 

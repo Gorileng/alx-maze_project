@@ -2,15 +2,15 @@
 #define _RAYCASTER_H_
 
 /**
- * struct Vector - Typedef for a struct of type Vector
- * @posX: x-coordinate of an object at a starting time
- * @posY: y-coordinate of an object at a starting time
- * @dirX: x-coordinate direction vector of an object at a time
- * @dirY: y-coordinate direction vector  of an object at a time
- * @planeX: x-coordinate of an object on the camera plane at a time
- * @planeY: y-coordinate of an object on the camera plane at a time
+ * struct Vector - Typedef for the struct of the type Vector
+ * @posX: x-coordinate of the object at the starting time
+ * @posY: y-coordinate of the object at the starting time
+ * @dirX: x-coordinate direction vector of the object at the time
+ * @dirY: y-coordinate direction vector  of the object at the time
+ * @planeX: x-coordinate of the object on a camera plane at the time
+ * @planeY: y-coordinate of the object on a camera plane at the time
  *
- * Description: It is a struct containing all cordinates of an object at a time
+ * Description: It is the struct that contains every cordinates of the object at a time
  */
 typedef struct Vector
 {
@@ -23,11 +23,11 @@ typedef struct Vector
 } Vector;
 
 /**
- * struct Projection - Typedef for a struct of type Projection
- * @drawStart: The coordinate of the first pixel to be drawn
- * @drawEnd: The coordinate of the last pixel to be drawn
+ * struct Projection - Typedef for the struct of a type Projection
+ * @drawStart: The coordinates of a first pixel to be drawn
+ * @drawEnd: The coordinates of a last pixel to be drawn
  *
- * Description: It is a struct containing the start and stop cordinates for
+ * Description: It is the struct that contains a start and stop the cordinates for
  * camera projection.
  */
 typedef struct Projection

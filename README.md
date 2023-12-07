@@ -1,5 +1,5 @@
 # alx-maze_project
-This is the alternative 'Maze project' for build your portfolio project (week 2)MVP complete.
+This is the alternative 'Maze project' for build your portfolio project (week 3)project landing page.
 # **Maze project**
 
 ## Background Context
